@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
 }
-/* estilado general */
+/* ============== estilado general ============== */
 body{
     background-color: rgb(169, 218, 169);
 }
@@ -41,22 +41,38 @@ p, a{
     padding: 20px;
     text-align: justify;
 }
-/* estilado general */
+/* ============== estilado general ============== */
 
+
+/* ============== navbar ============== */
 .navbar-nav{
     align-items: center;
 }
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: goldenrod;
+}
+/* ============== navbar ============== */
 
+
+/* ============== carruseles ============== */
 .carruselBox {
     display: flex;
     margin: 30px 350px;
 }
 
-/* galeria de promociones index*/
+.carruselBox h5{
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+    text-shadow: 7px 4px 5px gold;
+}
+/* ============== carruseles ============== */
+
+
+/* ============== galeria de promociones index ============== */
 .galeria{
     display: grid;
     grid-template-columns: 220px 220px 220px;
-    /* grid-template-rows: auto; */
     grid-template-rows: 624px 624px 624px;
     gap: 15px;
     padding: 1%;
@@ -103,21 +119,37 @@ p, a{
     grid-column: 1/2;
     grid-row: 3/4;
 }
-/* galeria de promociones index*/
+/* ============== galeria de promociones index ============== */
+
+/* ============== galeria de ofertas en pag-promociones ============== */
+.galeriaPromos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.galeriaPromos .card{
+    margin: 10px;
+}
+/* ============== galeria de ofertas en pag-promociones ============== */
 
 
+/* ============== galeria de productos: cactus y suculentas ============== */
 .productos{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items: flex-start;
-    padding: 10px;
+    justify-content: space-evenly;
 }
 
 .productos div{
     padding: 30PX 20px;
 }
+
+.productos img{
+    width: 280px;
+}
+/* ============== galeria de productos: cactus y suculentas ============== */
+
 
 .mediaIndex div{
     font-family: 'Ubuntu', sans-serif;
@@ -126,7 +158,7 @@ p, a{
     text-align: center;
 }
 
-/* ====================footer====================== */
+/* ============== footer ============== */
 .footerContainer {
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -188,11 +220,11 @@ p, a{
     text-align: center;
     color: antiquewhite;
 }
-/* ====================footer====================== */
+/* ============== footer ============== */
 
 
 
-/* media queries */
+/*  ============== media queries ==============  */
 /* 320 / 720 / 1024 */
 
 @media screen and (min-width:320px){
@@ -212,6 +244,9 @@ p, a{
         text-align: justify;
         margin: 1px 1px;
         text-align: justify;
+    }
+    .card-text{
+        color: black;
     }
     .carruselBox {
         margin: 5px 5px;
@@ -264,10 +299,6 @@ p, a{
         margin: 1px 1px;
         text-align: justify;
     }
-    /* .descripciones{
-        padding: 10px;
-        margin: 5px;
-    } */
 }
 
 @media screen and (min-width:720px){
@@ -305,7 +336,6 @@ p, a{
     }
     .galeria{
         grid-template-columns: 220px 220px 220px;
-        /* grid-template-rows: auto; */
         height: max-content;
         margin: 10px;
     }
