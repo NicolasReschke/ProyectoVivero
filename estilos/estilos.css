@@ -3,6 +3,7 @@
 *{
     padding: 0;
     margin: 0;
+    font-size: 100%;
 }
 /* ============== estilado general ============== */
 body{
@@ -55,12 +56,30 @@ p, a{
 
 
 /* ============== carruseles ============== */
-.carruselBox {
+.presentacion {
+    width: 100%;
     display: flex;
-    margin: 30px 350px;
+    flex-wrap: nowrap;
+    padding: 30px;
+    place-items: center;
 }
 
-.carruselBox h5{
+.presetacionGrupo1{
+    padding: 10px;
+}
+
+.presentacionGrupo1 h2, p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.carruselBox {
+    width: 250%;
+    display: flex;
+    padding: 30px;
+}
+
+.carruselBox2 h5{
     color: black;
     font-weight: bolder;
     font-size: x-large;
@@ -126,28 +145,96 @@ p, a{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 50px;
 }
 
 .galeriaPromos .card{
-    margin: 10px;
+    margin: 20px;
 }
 /* ============== galeria de ofertas en pag-promociones ============== */
 
 
 /* ============== galeria de productos: cactus y suculentas ============== */
 .productos{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    place-items: center;
+}
+/* ============== izquierda ==============*/
+.izquierda{
+    width: 80%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(to left, goldenrod, green);
+}
+
+.izquierda .imgizquierda{
+    overflow: hidden;
+}
+
+.izquierda .imgizquierda img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.izquierda .textoizquierda{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
 }
 
-.productos div{
-    padding: 30PX 20px;
+.izquierda .textoizquierda .contenidoizquierda{
+    padding-left: 20px;
 }
 
-.productos img{
-    width: 280px;
+.izquierda .textoizquierda .contenidoizquierda p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
 }
+
+/* ============== derecha ==============*/
+.derecha{
+    width: 80%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, goldenrod, green);
+}
+
+.derecha .imgderecha{
+    overflow: hidden;
+}
+
+.derecha .imgderecha img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.derecha .textoderecha{
+    display: flex;
+    align-items: center;
+}
+
+.derecha .textoderecha .contenidoderecha{
+    padding-right: 20px;
+}
+
+.derecha .textoderecha .contenidoderecha p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
 /* ============== galeria de productos: cactus y suculentas ============== */
 
 
@@ -242,8 +329,10 @@ p, a{
     p, a {
         color: antiquewhite;
         text-align: justify;
-        margin: 1px 1px;
-        text-align: justify;
+        margin: 5px 5px;
+    }
+    .galeriaPromos{
+        padding: 5px;
     }
     .card-text{
         color: black;
@@ -262,14 +351,65 @@ p, a{
         width: 100%;
         object-fit: cover;
     }
+/* ============== izquierda ==============*/
+    .izquierda{
+        width: 90%;
+        grid-template-columns: 1fr;
+        background: linear-gradient(to bottom, goldenrod, green);
+    }
+    .izquierda .textoizquierda .contenidoizquierda{
+        padding: 0%;
+    }
+    .izquierda .textoizquierda .contenidoizquierda p{
+        text-align: justify;
+    }
+    .izquierda .textoizquierda .contenidoizquierda h3{
+        text-align: center;
+    }
+/* ============== izquierda ==============*/
+
+
+/* ============== derecha ==============*/
+    .derecha{
+        width: 90%;
+        grid-template-columns: 1fr;
+        background: linear-gradient(to top, goldenrod, green);
+    }
+    .derecha .textoderecha .contenidoderecha p{
+        text-align: justify;
+    }
+    .derecha .textoderecha .contenidoderecha h3{
+        text-align: center;
+    }
+/* ============== derecha ==============*/
+
     .footerContainer .grupo1{
         width: 90%;
-        grid-template-columns: repeat(1, 1fr);
-        grid-gap: 30px;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
         padding: 35px 0px;
         text-align: center;
     }
+    .footerContainer .grupo1 h5, .parrafoFooter{
+        text-align: center;
+    }
+    
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .presentacionGrupo1{
+        padding: 10px;
+    }
+    .presentacionGrupo1 h2, p{
+        font-size: 10px;
+        text-align: justify;
+    }
     .carruselBox{
+        padding: 5px;
+    }
+    
+    .carruselBox2{
         margin: 5px 10px;
         border-top: 5px solid grey;
         border-bottom: 5px solid grey;
@@ -296,12 +436,11 @@ p, a{
     p, a {
         color: antiquewhite;
         text-align: justify;
-        margin: 1px 1px;
-        text-align: justify;
+        margin: 5px 5px;
     }
 }
 
-@media screen and (min-width:720px){
+@media screen and (min-width:768px){
     body {
         background-color: rgb(169, 218, 169);
     }
@@ -323,6 +462,19 @@ p, a{
         text-align: justify;
         padding: 10px 30px;
     }
+
+    .izquierda{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to left, goldenrod, green);
+    }
+
+    .derecha{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to right, goldenrod, green);
+    }
+
     .footerContainer .grupo1{
         width: 100%;
         max-width: 1200px;
@@ -360,7 +512,23 @@ p, a{
         width: 600px;
         height: 500px;
     }
+
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .presentacionGrupo1{
+        padding: 25px;
+    }
+    .presentacionGrupo1 h2, p{
+        font-size: 15px;
+        text-align: justify;
+    }
     .carruselBox{
+        padding: 5px;
+    }
+
+    .carruselBox2{
         margin: 30px 100px;
         border-top: 15px solid grey;
         border-bottom: 15px solid grey;
@@ -368,7 +536,14 @@ p, a{
 }
 
 @media screen and (min-width:1024px){
-    .carruselBox{
+    .presentacion{
+        flex-wrap: nowrap;
+    }
+    .presentacionGrupo1 h2, p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .carruselBox2{
         margin: 30px 150px;
         border-top: 25px solid grey;
         border-bottom: 25px solid grey;
