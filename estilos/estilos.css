@@ -7,8 +7,25 @@
 }
 /* ============== estilado general ============== */
 body{
-    background-color: rgb(169, 218, 169);
+    height: 100vh;
+    background: linear-gradient(45deg, #191A19, #1E5128, #4E9F3D, #D8E9A8);
+    background-size: 400% 400%;
+    animation: gradient 15s ease-in infinite;
 }
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
 
 h1, h2{
     font-family: 'Poppins', sans-serif;
@@ -241,8 +258,7 @@ p, a{
 
 .mediaIndex div{
     font-family: 'Ubuntu', sans-serif;
-    color: red;
-    background-color: rgb(32, 32, 32);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 
@@ -413,7 +429,27 @@ p, a{
 
 /*  ============== paleta de colores ==============  */
 
-.presentacion{
+body{
+    height: 100vh;
+    background: linear-gradient(45deg, #191A19, #1E5128, #4E9F3D, #D8E9A8);
+    background-size: 400% 700%;
+    animation: gradient 5s ease-in infinite;
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+/* .presentacion{
     background-color: #1E5128;
 }
 .galeria{
@@ -421,9 +457,7 @@ p, a{
 }
 .mediaIndex{
     background-color: #D8E9A8;
-}
-
-
+} */
 
 /*  ============== paleta de colores ==============  */
 
@@ -563,9 +597,9 @@ p, a{
 }
 
 @media screen and (min-width:768px){
-    body {
+    /* body {
         background-color: rgb(169, 218, 169);
-    }
+    } */
     .titulo1, .titulo2 {
         border: 10px solid grey;
         padding: 20px;
