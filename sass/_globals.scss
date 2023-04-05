@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&family=Ubuntu:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+/* ============== estilado general ============== */
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../img/fondoabstract2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contenedorTitulo{
+    margin: 0;
+    background-image: url(../img/fondotitulo.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+h1, h2{
+    font-family: 'Poppins', sans-serif;
+    color: rgb(1, 66, 1);
+    text-align: center;
+    font-weight:bolder;
+}
+
+p, a{
+    text-decoration: none;
+    color: black;
+}
+
+.titulo1{
+    text-align: center;
+    border: 10px;
+    // background-color: antiquewhite;
+    padding: 20px;
+}
+
+.titulo2 {
+    text-align: center;
+    border: 5px solid grey;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.descripciones {
+    margin: 10px 50px;
+    padding: 20px;
+    text-align: justify;
+}
+/* ============== estilado general ============== */
+
+
+/* ============== btn-wsp ============== */
+.btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    background: #000000;
+}
+/* ============== btn-wsp ============== */
+

@@ -1,0 +1,289 @@
+/*  ============== media queries ==============  */
+/* 320 / 768 / 1024 */
+
+@media screen and (min-width:320px){
+
+    .titulo1, .titulo2 {
+        // border: 2px solid grey;
+        // padding: 5px;
+        font-weight: normal;
+    }
+    .titulo2 {
+        margin-top: 35px;
+    }
+    p, a {
+        color: antiquewhite;
+        text-align: justify;
+        margin: 5px 5px;
+    }
+    .galeriaPromos{
+        padding: 5px;
+    }
+    .card-text{
+        color: black;
+    }
+    .carruselBox {
+        margin: 5px 5px;
+        position: relative;
+    }
+    .galeria{
+        grid-template-rows: auto;
+        height: max-content;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 10px;
+    }
+    .gridGaleria img{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    /* ============== galeria de productos: cactus y suculentas ============== */
+    /* ============== izquierda ==============*/
+    .izquierda{
+        width: 90%;
+        grid-template-columns: 1fr;
+        background: linear-gradient(to bottom, goldenrod, green);
+    }
+    .izquierda .textoizquierda .contenidoizquierda{
+        padding: 0%;
+    }
+    .izquierda .textoizquierda .contenidoizquierda p{
+        text-align: justify;
+    }
+    .izquierda .textoizquierda .contenidoizquierda h3{
+        text-align: center;
+    }
+/* ============== izquierda ==============*/
+/* ============== derecha ==============*/
+    .derecha{
+        width: 90%;
+        grid-template-columns: 1fr;
+        background: linear-gradient(to top, goldenrod, green);
+    }
+    .derecha .textoderecha .contenidoderecha p{
+        text-align: justify;
+    }
+    .derecha .textoderecha .contenidoderecha h3{
+        text-align: center;
+    }
+/* ============== derecha ==============*/
+/* ============== galeria de productos: cactus y suculentas ============== */
+
+
+    .imagenPromo{
+        width: 100%;
+        height: 50%;
+    }
+
+    .btn-wsp{
+        position: fixed;
+        width: 45px;
+        height: 45px;
+        bottom: 60px;
+        right: 10px;
+    }
+
+
+    /* ============== footer ============== */
+    .footerContainer .grupo1{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        padding: 35px 0px;
+        text-align: center;
+    }
+    .footerContainer .grupo1 h5, .parrafoFooter{
+        text-align: center;
+    }
+    /* ============== footer ============== */
+    
+    /* ============== carruseles ============== */
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+    .presentacionGrupo1{
+        padding: 10px;
+    }
+    .presentacionGrupo1 h2, p{
+        color: black;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .carruselBox{
+        padding: 5px;
+    }
+    
+    .carruselBox2{
+        margin: 5px 10px;
+        border-top: 5px solid grey;
+        border-bottom: 5px solid grey;
+    }
+    /* ============== carruseles ============== */
+
+    .descripciones{
+        padding: 10px 20px;
+        margin: 5px;
+    }
+}
+
+
+@media screen and (min-width:600px){
+    body {
+        background-color: black;
+    }
+    .titulo1, .titulo2 {
+        // border: 2px solid grey;
+        // padding: 5px;
+        font-weight: normal;
+        font-weight: bolder;
+    }
+    .titulo2 {
+        margin-top: 35px;
+    }
+    p, a {
+        color: antiquewhite;
+        text-align: justify;
+        margin: 5px 5px;
+    }
+}
+
+@media screen and (min-width:768px){
+    .titulo1, .titulo2 {
+        // border: 10px solid grey;
+        // padding: 20px;
+        font-weight: bolder;
+    }
+    .titulo2 {
+        margin-top: 10px;
+        border: 5px solid grey;
+    }
+    p, a {
+        color: black;
+        text-align: justify;
+        margin: 10px 10x;
+    }
+    .descripciones{
+        text-align: justify;
+        padding: 10px 30px;
+    }
+
+    .izquierda{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to left, goldenrod, green);
+    }
+
+    .derecha{
+        width: 80%;
+        grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to right, goldenrod, green);
+    }
+
+    .imagenPromo{
+        width: 100%;
+        height: 70%;
+    }
+
+    .btn-wsp{
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    bottom: 30px;
+    right: 30px;
+    }
+
+    .footerContainer .grupo1{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 40px;
+        padding: 10px 0px;
+        text-align: center;
+        align-items: center;
+    }
+    .galeria{
+        grid-template-columns: 220px 220px 220px;
+        height: max-content;
+        margin: 10px;
+    }
+    .gridGaleria img{
+        width: 100%;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: .9;
+        transition: .5s ease;
+    }
+    .gridGaleria img:hover{
+        cursor: crosshair;
+        width: 105%;
+        opacity: 1;
+        filter: contrast(120%);
+    }
+    .mediaIndex div{
+            padding: 30px;
+    }
+    .mediaIndex iframe{
+        padding: 30px;
+        width: 600px;
+        height: 500px;
+    }
+
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 25px;
+    }
+    .presentacionGrupo1{
+        padding: 25px;
+    }
+    .presentacionGrupo1 h2, p{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .carruselBox{
+        padding: 5px;
+    }
+
+    .carruselBox2{
+        margin: 30px 100px;
+        border-top: 15px solid grey;
+        border-bottom: 15px solid grey;
+    }
+}
+
+@media screen and (min-width:1024px){
+    .presentacion{
+        flex-wrap: nowrap;
+    }
+    .presentacionGrupo1 h2, p{
+        font-size: 20px;
+        text-align: justify;
+    }
+    .carruselBox2{
+        margin: 30px 150px;
+        border-top: 25px solid grey;
+        border-bottom: 25px solid grey;
+    }
+    .galeria{
+        grid-template-columns: 350px 350px 350px;
+        grid-template-rows: auto;
+        height: max-content;
+        margin: 10px;
+    }
+    .mediaIndex iframe{
+        width: 500px;
+    }
+
+    .imagenPromo{
+        width: 100%;
+        height: 80%;
+    }
+
+    .descripciones{
+        text-align: justify;
+        padding: 20px 60px;
+    }
+}
+
