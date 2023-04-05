@@ -5,21 +5,18 @@
     flex-wrap: nowrap;
     padding: 100px;
     place-items: center;
-}
-
-.presetacionGrupo1{
-    padding: 10px;
-}
-
-.presentacionGrupo1 h2, p{
-    font-size: 20px;
-    text-align: justify;
-}
-
-.carruselBox {
-    width: 250%;
-    display: flex;
-    padding: 30px;
+    .presetacionGrupo1{
+        padding: 10px;
+        h2, p{
+            font-size: 20px;
+            text-align: justify;
+        }
+    }
+    .carruselBox {
+        width: 250%;
+        display: flex;
+        padding: 30px;
+    }
 }
 
 .carruselBox2 h5{
@@ -40,13 +37,13 @@
     padding: 1%;
     justify-content: center;
     align-items: center;
-}
-.gridGaleria{
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    border-radius: 20px;
+    .gridGaleria{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+    }
 }
 
 .promo1{

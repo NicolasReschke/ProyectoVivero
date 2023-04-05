@@ -1,12 +1,13 @@
 /* ============== galeria de ofertas en pag-promociones ============== */
+
 .galeriaPromos{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 50px;
+    .card{
+        margin: 20px;
+    }
 }
 
-.galeriaPromos .card{
-    margin: 20px;
-}
 /* ============== galeria de ofertas en pag-promociones ============== */

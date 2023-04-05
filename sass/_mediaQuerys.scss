@@ -12,7 +12,7 @@
         margin-top: 35px;
     }
     p, a {
-        color: antiquewhite;
+        color: rgb(0, 0, 0);
         text-align: justify;
         margin: 5px 5px;
     }
@@ -37,37 +37,72 @@
         object-fit: cover;
     }
 
+    /* ============== carruseles ============== */
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 10px;
+        .presentacionGrupo1{
+            padding: 10px;
+            h2, p{
+                color: black;
+                font-size: 15px;
+                text-align: justify;
+            }
+        }
+        .carruselBox{
+            padding: 5px;
+        }
+    }
+
+    .carruselBox2{
+        margin: 5px 10px;
+        border-top: 5px solid grey;
+        border-bottom: 5px solid grey;
+    }
+    /* ============== carruseles ============== */
+
+    .descripciones{
+        padding: 10px 20px;
+        margin: 5px;
+    }
+
     /* ============== galeria de productos: cactus y suculentas ============== */
     /* ============== izquierda ==============*/
     .izquierda{
         width: 90%;
         grid-template-columns: 1fr;
         background: linear-gradient(to bottom, goldenrod, green);
+        .textoizquierda{
+            .contenidoizquierda{
+                p{
+                    text-align: justify;
+                }
+                h3{
+                    text-align: center;
+                }
+            }
+        }
     }
-    .izquierda .textoizquierda .contenidoizquierda{
-        padding: 0%;
-    }
-    .izquierda .textoizquierda .contenidoizquierda p{
-        text-align: justify;
-    }
-    .izquierda .textoizquierda .contenidoizquierda h3{
-        text-align: center;
-    }
-/* ============== izquierda ==============*/
-/* ============== derecha ==============*/
+    /* ============== izquierda ==============*/
+
+    /* ============== derecha ==============*/
     .derecha{
         width: 90%;
         grid-template-columns: 1fr;
         background: linear-gradient(to top, goldenrod, green);
+        .textoderecha{
+            .contenidoderecha{
+                p{
+                    text-align: justify;
+                }
+                h3{
+                    text-align: center;
+                }
+            }
+        }
     }
-    .derecha .textoderecha .contenidoderecha p{
-        text-align: justify;
-    }
-    .derecha .textoderecha .contenidoderecha h3{
-        text-align: center;
-    }
-/* ============== derecha ==============*/
-/* ============== galeria de productos: cactus y suculentas ============== */
+    /* ============== derecha ==============*/
+    /* ============== galeria de productos: cactus y suculentas ============== */
 
 
     .imagenPromo{
@@ -85,56 +120,28 @@
 
 
     /* ============== footer ============== */
-    .footerContainer .grupo1{
-        width: 90%;
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-        padding: 35px 0px;
-        text-align: center;
+    .footerContainer{
+        .grupo1{
+            width: 90%;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            padding: 35px 0px;
+            text-align: center;
+            h5{
+                text-align: center;
+            }
+            .parrafoFooter{
+                text-align: center;
+            }
+        }
     }
-    .footerContainer .grupo1 h5, .parrafoFooter{
-        text-align: center;
-    }
-    /* ============== footer ============== */
-    
-    /* ============== carruseles ============== */
-    .presentacion{
-        flex-wrap: wrap;
-        padding: 10px;
-    }
-    .presentacionGrupo1{
-        padding: 10px;
-    }
-    .presentacionGrupo1 h2, p{
-        color: black;
-        font-size: 14px;
-        text-align: justify;
-    }
-    .carruselBox{
-        padding: 5px;
-    }
-    
-    .carruselBox2{
-        margin: 5px 10px;
-        border-top: 5px solid grey;
-        border-bottom: 5px solid grey;
-    }
-    /* ============== carruseles ============== */
 
-    .descripciones{
-        padding: 10px 20px;
-        margin: 5px;
-    }
+    /* ============== footer ============== */
 }
 
 
 @media screen and (min-width:600px){
-    body {
-        background-color: black;
-    }
     .titulo1, .titulo2 {
-        // border: 2px solid grey;
-        // padding: 5px;
         font-weight: normal;
         font-weight: bolder;
     }
@@ -142,16 +149,15 @@
         margin-top: 35px;
     }
     p, a {
-        color: antiquewhite;
+        color: rgb(0, 0, 0);
         text-align: justify;
         margin: 5px 5px;
     }
 }
 
+
 @media screen and (min-width:768px){
     .titulo1, .titulo2 {
-        // border: 10px solid grey;
-        // padding: 20px;
         font-weight: bolder;
     }
     .titulo2 {
@@ -166,6 +172,27 @@
     .descripciones{
         text-align: justify;
         padding: 10px 30px;
+    }
+
+    .presentacion{
+        flex-wrap: wrap;
+        padding: 25px;
+        .presentacionGrupo1{
+            padding: 25px;
+            h2, p{
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+        .carruselBox{
+            padding: 5px;
+        }
+    }
+    
+    .carruselBox2{
+        margin: 30px 100px;
+        border-top: 15px solid grey;
+        border-bottom: 15px solid grey;
     }
 
     .izquierda{
@@ -204,74 +231,60 @@
         text-align: center;
         align-items: center;
     }
+
     .galeria{
         grid-template-columns: 220px 220px 220px;
         height: max-content;
         margin: 10px;
+        img{
+            width: 100%;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .9;
+            transition: .5s ease;
+            &:hover{
+                cursor: crosshair;
+                width: 105%;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
     }
-    .gridGaleria img{
-        width: 100%;
-        flex-grow: 1;
-        object-fit: cover;
-        opacity: .9;
-        transition: .5s ease;
-    }
-    .gridGaleria img:hover{
-        cursor: crosshair;
-        width: 105%;
-        opacity: 1;
-        filter: contrast(120%);
-    }
+
     .mediaIndex div{
-            padding: 30px;
-    }
-    .mediaIndex iframe{
         padding: 30px;
-        width: 600px;
-        height: 500px;
-    }
-
-    .presentacion{
-        flex-wrap: wrap;
-        padding: 25px;
-    }
-    .presentacionGrupo1{
-        padding: 25px;
-    }
-    .presentacionGrupo1 h2, p{
-        font-size: 15px;
-        text-align: justify;
-    }
-    .carruselBox{
-        padding: 5px;
-    }
-
-    .carruselBox2{
-        margin: 30px 100px;
-        border-top: 15px solid grey;
-        border-bottom: 15px solid grey;
+        iframe{
+            padding: 30px;
+            width: 600px;
+            height: 500px;
+        }
     }
 }
 
 @media screen and (min-width:1024px){
     .presentacion{
         flex-wrap: nowrap;
+        .presentacionGrupo1{
+            h2, p{
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
     }
-    .presentacionGrupo1 h2, p{
-        font-size: 20px;
-        text-align: justify;
-    }
+
     .carruselBox2{
         margin: 30px 150px;
         border-top: 25px solid grey;
         border-bottom: 25px solid grey;
     }
+
     .galeria{
         grid-template-columns: 350px 350px 350px;
         grid-template-rows: auto;
         height: max-content;
         margin: 10px;
     }
+
     .mediaIndex iframe{
         width: 500px;
     }
@@ -286,4 +299,3 @@
         padding: 20px 60px;
     }
 }
-
