@@ -338,19 +338,20 @@ p, a {
 .envios {
   height: 100vh;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 20px;
   padding: 10px;
   align-content: center;
+  align-items: center;
   justify-content: space-evenly;
 }
 .envios div {
-  padding: 30px 30px;
+  padding: 15px 0px;
   text-align: center;
   justify-content: center;
 }
 .envios div img {
-  width: 300px;
+  width: 280px;
 }
 
 /* ============== footer ============== */
