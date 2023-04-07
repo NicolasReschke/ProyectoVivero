@@ -64,7 +64,7 @@ p, a {
   position: fixed;
   width: 55px;
   height: 55px;
-  bottom: 30px;
+  bottom: 40px;
   right: 30px;
   border-radius: 50px;
   text-align: center;
@@ -77,6 +77,19 @@ p, a {
   background: #000000;
 }
 
+/* ============== btn-wsp ============== */
+/* ============== btn-gotop ============== */
+.goTopBtn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 50px;
+  left: 30px;
+  font-size: 45px;
+  color: white;
+}
+
+/* ============== btn-gotop ============== */
 /* ============== navbar ============== */
 .navbar-nav {
   align-items: center;
@@ -516,6 +529,13 @@ p, a {
     bottom: 60px;
     right: 10px;
   }
+  .goTopBtn {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 70px;
+    left: 10px;
+  }
   .mediaIndex {
     border-top: 5px solid black;
   }
@@ -605,6 +625,13 @@ p, a {
     height: 55px;
     bottom: 30px;
     right: 30px;
+  }
+  .goTopBtn {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 50px;
+    left: 30px;
   }
   .footerContainer .grupo1 {
     width: 100%;
