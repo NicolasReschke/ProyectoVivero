@@ -1,0 +1,25 @@
+$colorh1: rgb(0, 92, 0);
+$fondoTitulo: url(../img/fondotitulo.jpg);
+
+@mixin fondoBody {
+    background-image: url(../img/fondoabstract2.jpg);
+    margin: 0;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin contenedorTitulo{
+    margin: 0;
+    background-image: $fondoTitulo;
+    background-size: cover;
+    background-position: top;
+}
+
+@mixin tituloh1 {
+    color: $colorh1;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    font-weight: bolder;
+}

@@ -8,9 +8,9 @@
 
 /* ============== estilado general ============== */
 body {
+  background-image: url(../img/fondoabstract2.jpg);
   margin: 0;
   min-height: 100vh;
-  background-image: url(../img/fondoabstract2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -24,9 +24,9 @@ body {
 }
 
 h1, h2 {
-  font-family: "Righteous", cursive;
-  color: rgb(1, 66, 1);
+  color: rgb(0, 92, 0);
   text-align: center;
+  font-family: "Righteous", cursive;
   font-weight: bolder;
 }
 
@@ -36,7 +36,10 @@ p, a {
 }
 
 .titulo1 {
+  color: rgb(0, 92, 0);
   text-align: center;
+  font-family: "Righteous", cursive;
+  font-weight: bolder;
   border: 10px;
   padding: 20px;
 }
@@ -336,10 +339,10 @@ p, a {
 
 /* ============== galeria de productos: cactus y suculentas ============== */
 .envios {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 10px;
   align-content: center;
   align-items: center;
@@ -418,7 +421,7 @@ p, a {
     font-weight: normal;
   }
   .titulo2 {
-    margin-top: 35px;
+    margin-top: 15px;
   }
   p, a {
     color: rgb(0, 0, 0);
@@ -470,6 +473,7 @@ p, a {
   }
   /* ============== carruseles ============== */
   .descripciones {
+    background-color: rgba(15, 139, 15, 0.342);
     padding: 10px 20px;
     margin: 5px;
   }
@@ -511,6 +515,9 @@ p, a {
     height: 45px;
     bottom: 60px;
     right: 10px;
+  }
+  .mediaIndex {
+    border-top: 5px solid black;
   }
   /* ============== footer ============== */
   .footerContainer .grupo1 {
@@ -614,7 +621,7 @@ p, a {
     grid-template-columns: 220px 220px 220px;
     height: -moz-max-content;
     height: max-content;
-    margin: 10px;
+    margin: 50px;
   }
   .galeria img {
     width: 100%;
@@ -630,6 +637,9 @@ p, a {
     opacity: 1;
     filter: contrast(120%);
   }
+  .mediaIndex {
+    border-top: 5px solid black;
+  }
   .mediaIndex div {
     padding: 30px;
   }
@@ -637,6 +647,11 @@ p, a {
     padding: 30px;
     width: 600px;
     height: 500px;
+  }
+  .descripciones {
+    font-size: 20px;
+    text-align: justify;
+    padding: 20px 60px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -657,7 +672,6 @@ p, a {
     grid-template-rows: auto;
     height: -moz-max-content;
     height: max-content;
-    margin: 10px;
   }
   .mediaIndex iframe {
     width: 500px;
@@ -667,6 +681,7 @@ p, a {
     height: 80%;
   }
   .descripciones {
+    font-size: 30px;
     text-align: justify;
     padding: 20px 60px;
   }
