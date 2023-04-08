@@ -14,6 +14,7 @@
     grid-gap: 50px 30px;
     padding: 20px;
     margin-bottom: 10px;
+    border-radius: 20px;
     background: linear-gradient(to left, goldenrod, green);
     .imgizquierda{
         overflow: hidden;
@@ -27,7 +28,6 @@
         display: flex;
         align-items: center;
         .contenidoizquierda{
-            padding-left: 20px;
             p{
                 font-size: 16px;
                 line-height: 26px;
@@ -46,6 +46,7 @@
     grid-gap: 30px 50px;
     padding: 20px;
     margin-bottom: 10px;
+    border-radius: 20px;
     background: linear-gradient(to right, goldenrod, green);
     .imgderecha{
         overflow: hidden;
@@ -59,7 +60,6 @@
         display: flex;
         align-items: center;
         .contenidoderecha{
-            padding-right: 20px;
             p{
                 font-size: 16px;
                 line-height: 26px;

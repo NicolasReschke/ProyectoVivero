@@ -8,7 +8,7 @@
 
 /* ============== estilado general ============== */
 body {
-  background-image: url(../img/fondoabstract2.jpg);
+  background-image: url(../img/fondoabstract1.jpg);
   margin: 0;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -23,14 +23,16 @@ body {
   background-position: top;
 }
 
-h1, h2 {
+h1, h2, h3 {
   color: rgb(0, 92, 0);
   text-align: center;
   font-family: "Righteous", cursive;
   font-weight: bolder;
+  font-size: 25px;
 }
 
 p, a {
+  font-family: "Ubuntu", sans-serif;
   text-decoration: none;
   color: black;
 }
@@ -40,14 +42,20 @@ p, a {
   text-align: center;
   font-family: "Righteous", cursive;
   font-weight: bolder;
+  font-size: 25px;
   border: 10px;
   padding: 20px;
 }
 
-.titulo2 {
-  text-align: center;
-  border: 5px solid grey;
+.contenedorTitulo2 {
+  display: block;
+  text-align: -webkit-center;
+}
+.contenedorTitulo2 .titulo2 {
+  max-width: 600px;
+  border: 1.5px solid rgb(78, 153, 72);
   background-color: antiquewhite;
+  border-radius: 20px;
   padding: 10px;
   margin-top: 10px;
 }
@@ -86,7 +94,7 @@ p, a {
   bottom: 50px;
   left: 30px;
   font-size: 45px;
-  color: rgb(27, 27, 255);
+  color: rgb(70, 70, 70);
 }
 
 /* ============== btn-gotop ============== */
@@ -97,6 +105,15 @@ p, a {
 
 .navbar-dark .navbar-nav .nav-link:hover {
   color: goldenrod;
+}
+
+.navbar-nav a img {
+  max-width: 100px;
+  border-radius: 50% 50%;
+}
+
+.navbar-brand img {
+  border-radius: 50%;
 }
 
 /* ============== navbar ============== */
@@ -193,6 +210,9 @@ p, a {
   font-family: "Ubuntu", sans-serif;
   color: rgb(0, 0, 0);
   text-align: center;
+}
+.mediaIndex div iframe {
+  border-radius: 10%;
 }
 
 /* ============== mediaIndex ============== */
@@ -293,6 +313,7 @@ p, a {
   grid-gap: 50px 30px;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 20px;
   background: linear-gradient(to left, goldenrod, green);
 }
 .izquierda .imgizquierda {
@@ -307,9 +328,6 @@ p, a {
 .izquierda .textoizquierda {
   display: flex;
   align-items: center;
-}
-.izquierda .textoizquierda .contenidoizquierda {
-  padding-left: 20px;
 }
 .izquierda .textoizquierda .contenidoizquierda p {
   font-size: 16px;
@@ -326,6 +344,7 @@ p, a {
   grid-gap: 30px 50px;
   padding: 20px;
   margin-bottom: 10px;
+  border-radius: 20px;
   background: linear-gradient(to right, goldenrod, green);
 }
 .derecha .imgderecha {
@@ -341,9 +360,6 @@ p, a {
   display: flex;
   align-items: center;
 }
-.derecha .textoderecha .contenidoderecha {
-  padding-right: 20px;
-}
 .derecha .textoderecha .contenidoderecha p {
   font-size: 16px;
   line-height: 26px;
@@ -352,22 +368,67 @@ p, a {
 
 /* ============== galeria de productos: cactus y suculentas ============== */
 .envios {
-  height: auto;
+  display: grid;
+  width: 100%;
+  min-height: 100vh;
+  place-items: center;
+  margin-top: 20px;
+}
+.envios .izquierda {
+  background: rgba(0, 0, 0, 0.199);
+}
+.envios .derecha {
+  background: rgba(0, 0, 0, 0.199);
+}
+
+.izquierda {
+  width: 80%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px 30px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.izquierda .imgizquierda {
+  overflow: hidden;
+}
+.izquierda .imgizquierda iframe {
+  width: 100%;
+}
+
+.textoizquierda {
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 50px;
-  padding: 10px;
-  align-content: center;
   align-items: center;
-  justify-content: space-evenly;
 }
-.envios div {
-  padding: 15px 0px;
-  text-align: center;
-  justify-content: center;
+.textoizquierda .contenidoizquierda p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 15px;
 }
-.envios div img {
-  width: 280px;
+
+.derecha {
+  width: 80%;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px 50px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+.derecha .imgderecha {
+  overflow: hidden;
+}
+.derecha .textoderecha {
+  display: flex;
+  align-items: center;
+}
+.derecha .textoderecha .contenidoderecha p {
+  font-size: 16px;
+  line-height: 26px;
+  padding-bottom: 15px;
 }
 
 /* ============== footer ============== */
@@ -436,6 +497,11 @@ p, a {
   .titulo2 {
     margin-top: 15px;
   }
+  h3 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 20px;
+    color: black;
+  }
   p, a {
     color: rgb(0, 0, 0);
     text-align: justify;
@@ -458,10 +524,34 @@ p, a {
     grid-template-columns: repeat(1, 1fr);
     margin: 10px;
   }
-  .gridGaleria img {
+  .galeria .gridGaleria img {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 10px;
+  }
+  .envios .izquierda {
+    padding: 10px;
+    grid-gap: 10px 0px;
+  }
+  .envios .izquierda .imgizquierda {
+    text-align: center;
+  }
+  .envios .izquierda .imgizquierda iframe {
+    width: auto;
+  }
+  .envios .derecha {
+    padding: 10px;
+    grid-gap: 10px 0px;
+  }
+  .envios .derecha .textoderecha {
+    justify-content: center;
+  }
+  .envios .derecha .textoderecha .imgderecha {
+    text-align: center;
+  }
+  .envios .derecha .textoderecha .imgderecha img {
+    width: 240px;
   }
   /* ============== carruseles ============== */
   .presentacion {
@@ -471,7 +561,10 @@ p, a {
   .presentacion .presentacionGrupo1 {
     padding: 10px;
   }
-  .presentacion .presentacionGrupo1 h2, .presentacion .presentacionGrupo1 p {
+  .presentacion .presentacionGrupo1 h2 {
+    text-align: center;
+  }
+  .presentacion .presentacionGrupo1 p {
     color: black;
     font-size: 15px;
     text-align: justify;
@@ -486,9 +579,10 @@ p, a {
   }
   /* ============== carruseles ============== */
   .descripciones {
-    background-color: rgba(15, 139, 15, 0.342);
+    background-color: rgba(187, 186, 106, 0.432);
     padding: 10px 20px;
     margin: 5px;
+    border-radius: 10px;
   }
   /* ============== galeria de productos: cactus y suculentas ============== */
   /* ============== izquierda ==============*/
@@ -536,9 +630,6 @@ p, a {
     bottom: 70px;
     left: 10px;
   }
-  .mediaIndex {
-    border-top: 5px solid black;
-  }
   /* ============== footer ============== */
   .footerContainer .grupo1 {
     width: 90%;
@@ -575,12 +666,17 @@ p, a {
   }
   .titulo2 {
     margin-top: 10px;
-    border: 5px solid grey;
   }
   p, a {
     color: black;
     text-align: justify;
     margin: 10px 10x;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 30px;
   }
   .descripciones {
     text-align: justify;
@@ -593,7 +689,10 @@ p, a {
   .presentacion .presentacionGrupo1 {
     padding: 25px;
   }
-  .presentacion .presentacionGrupo1 h2, .presentacion .presentacionGrupo1 p {
+  .presentacion .presentacionGrupo1 h2 {
+    text-align: center;
+  }
+  .presentacion .presentacionGrupo1 p {
     font-size: 20px;
     text-align: justify;
   }
@@ -650,22 +749,13 @@ p, a {
     height: max-content;
     margin: 50px;
   }
-  .galeria img {
+  .galeria .gridGaleria img {
     width: 100%;
     flex-grow: 1;
     -o-object-fit: cover;
        object-fit: cover;
-    opacity: 0.9;
-    transition: 0.5s ease;
-  }
-  .galeria img:hover {
-    cursor: crosshair;
-    width: 105%;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-  .mediaIndex {
-    border-top: 5px solid black;
+    border-radius: 15px;
+    background-color: white;
   }
   .mediaIndex div {
     padding: 30px;
@@ -685,9 +775,15 @@ p, a {
   .presentacion {
     flex-wrap: nowrap;
   }
-  .presentacion .presentacionGrupo1 h2, .presentacion .presentacionGrupo1 p {
+  .presentacion .presentacionGrupo1 h2 {
+    text-align: center;
+  }
+  .presentacion .presentacionGrupo1 p {
     font-size: 20px;
     text-align: justify;
+  }
+  h1 {
+    font-size: 50px;
   }
   .carruselBox2 {
     margin: 30px 150px;
@@ -708,8 +804,30 @@ p, a {
     height: 80%;
   }
   .descripciones {
-    font-size: 30px;
     text-align: justify;
     padding: 20px 60px;
   }
+}
+.envios .izquierda {
+  padding: 10px;
+  grid-gap: 10px 0px;
+}
+.envios .izquierda .imgizquierda {
+  text-align: center;
+}
+.envios .izquierda .imgizquierda iframe {
+  width: auto;
+}
+.envios .derecha {
+  padding: 10px;
+  grid-gap: 10px 0px;
+}
+.envios .derecha .textoderecha {
+  justify-content: center;
+}
+.envios .derecha .textoderecha .imgderecha {
+  text-align: center;
+}
+.envios .derecha .textoderecha .imgderecha img {
+  width: 240px;
 }/*# sourceMappingURL=style.css.map */

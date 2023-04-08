@@ -6,4 +6,19 @@
 .navbar-dark .navbar-nav .nav-link:hover{
     color: goldenrod;
 }
+
+.navbar-nav{
+    a{
+        img{
+            max-width: 100px;
+            border-radius: 50% 50%;
+        }
+    }
+}
+
+.navbar-brand{
+    img{
+        border-radius: 50%;
+    }
+}
 /* ============== navbar ============== */

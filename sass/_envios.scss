@@ -1,18 +1,66 @@
 .envios{
-    height: auto;
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    place-items: center;
+    margin-top: 20px;
+    .izquierda{
+        background: rgba(0, 0, 0, 0.199);
+    }
+    .derecha{
+        background: rgba(0, 0, 0, 0.199);
+    }
+}
+
+.izquierda{
+    width: 80%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    .imgizquierda{
+        overflow: hidden;
+        iframe{
+            width: 100%;
+        }
+    }
+}
+.textoizquierda{
     display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    padding: 10px;
-    align-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    div{
-        padding: 15px 0px;
-        text-align: center;
-        justify-content: center;
-        img{
-            width: 280px;
+    .contenidoizquierda{
+        p{
+            font-size: 16px;
+            line-height: 26px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+.derecha{
+    width: 80%;
+    max-width: 1400px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 50px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    .imgderecha{
+        overflow: hidden;
+    }
+    .textoderecha{
+        display: flex;
+        align-items: center;
+        .contenidoderecha{
+            p{
+                font-size: 16px;
+                line-height: 26px;
+                padding-bottom: 15px;
+            }
         }
     }
 }
