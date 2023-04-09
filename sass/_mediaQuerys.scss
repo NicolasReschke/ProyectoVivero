@@ -30,6 +30,9 @@
         margin: 5px 5px;
         position: relative;
     }
+    .carruselBox2{
+        padding: 30px 0px;
+    }
     .galeria{
         grid-template-rows: auto;
         height: max-content;
@@ -92,8 +95,8 @@
 
     .carruselBox2{
         margin: 5px 10px;
-        border-top: 5px solid grey;
-        border-bottom: 5px solid grey;
+        border-top: 5px;
+        border-bottom: 5px;
     }
     /* ============== carruseles ============== */
 
@@ -245,8 +248,8 @@
     
     .carruselBox2{
         margin: 30px 100px;
-        border-top: 15px solid grey;
-        border-bottom: 15px solid grey;
+        border-top: 15px;
+        border-bottom: 15px;
     }
 
     .izquierda{
@@ -357,8 +360,8 @@
 
     .carruselBox2{
         margin: 30px 150px;
-        border-top: 25px solid grey;
-        border-bottom: 25px solid grey;
+        padding: 30px 0px;
+        border-radius: 15px;
     }
 
     .galeria{

@@ -49,18 +49,22 @@
     padding: 20px;
     margin-bottom: 10px;
     border-radius: 20px;
-    .imgderecha{
-        overflow: hidden;
-    }
     .textoderecha{
         display: flex;
         align-items: center;
-        .contenidoderecha{
-            p{
-                font-size: 16px;
-                line-height: 26px;
-                padding-bottom: 15px;
-            }
+        .imgderecha{
+            overflow: hidden;
         }
     }
+    .contenidoderecha{
+        a{
+            p{
+            text-align: center;
+            }
+        }
+        font-size: 16px;
+        line-height: 26px;
+        padding-bottom: 15px;
+    }
 }
+

@@ -138,11 +138,8 @@ p, a {
   padding: 30px;
 }
 
-.carruselBox2 h5 {
-  color: black;
-  font-weight: bolder;
-  font-size: x-large;
-  text-shadow: 7px 4px 5px gold;
+.carousel-inner {
+  border-radius: 25px;
 }
 
 /* ============== carruseles ============== */
@@ -418,17 +415,20 @@ p, a {
   margin-bottom: 10px;
   border-radius: 20px;
 }
-.derecha .imgderecha {
-  overflow: hidden;
-}
 .derecha .textoderecha {
   display: flex;
   align-items: center;
 }
-.derecha .textoderecha .contenidoderecha p {
+.derecha .textoderecha .imgderecha {
+  overflow: hidden;
+}
+.derecha .contenidoderecha {
   font-size: 16px;
   line-height: 26px;
   padding-bottom: 15px;
+}
+.derecha .contenidoderecha a p {
+  text-align: center;
 }
 
 /* ============== footer ============== */
@@ -516,6 +516,9 @@ p, a {
     margin: 5px 5px;
     position: relative;
   }
+  .carruselBox2 {
+    padding: 30px 0px;
+  }
   .galeria {
     grid-template-rows: auto;
     height: -moz-max-content;
@@ -573,8 +576,8 @@ p, a {
   }
   .carruselBox2 {
     margin: 5px 10px;
-    border-top: 5px solid grey;
-    border-bottom: 5px solid grey;
+    border-top: 5px;
+    border-bottom: 5px;
   }
   /* ============== carruseles ============== */
   .descripciones {
@@ -701,8 +704,8 @@ p, a {
   }
   .carruselBox2 {
     margin: 30px 100px;
-    border-top: 15px solid grey;
-    border-bottom: 15px solid grey;
+    border-top: 15px;
+    border-bottom: 15px;
   }
   .izquierda {
     width: 80%;
@@ -794,8 +797,8 @@ p, a {
   }
   .carruselBox2 {
     margin: 30px 150px;
-    border-top: 25px solid grey;
-    border-bottom: 25px solid grey;
+    padding: 30px 0px;
+    border-radius: 15px;
   }
   .galeria {
     grid-template-columns: 350px 350px 350px;
