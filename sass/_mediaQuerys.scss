@@ -112,7 +112,6 @@
     .izquierda{
         width: 90%;
         grid-template-columns: 1fr;
-        background: linear-gradient(to bottom, goldenrod, green);
         .textoizquierda{
             .contenidoizquierda{
                 p{
@@ -131,7 +130,6 @@
     .derecha{
         width: 90%;
         grid-template-columns: 1fr;
-        background: linear-gradient(to top, goldenrod, green);
         .textoderecha{
             .contenidoderecha{
                 p{
@@ -255,7 +253,6 @@
     .izquierda{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
-        background: linear-gradient(to left, goldenrod, green);
         .textoizquierda{
             .contenidoizquierda{
                 p{
@@ -272,7 +269,6 @@
     .derecha{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
-        background: linear-gradient(to right, goldenrod, green);
     }
 
     .imagenPromo{
