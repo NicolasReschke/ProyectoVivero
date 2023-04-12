@@ -6,10 +6,14 @@
     .titulo1, .titulo2 {
         font-weight: normal;
     }
-    .titulo2 {
-        margin-top: 15px;
+    
+    .contenedorTitulo2{
+        margin: 0px 10px;
+        .titulo2 {
+            margin-top: 10px;
+        }
     }
-
+    
     h3{
         font-family: 'Ubuntu', sans-serif;
         font-size: 20px;
@@ -29,9 +33,6 @@
         font-size: 16px;
     }
 
-    .galeriaPromos{
-        padding: 5px;
-    }
     .card-text{
         color: black;
     }
@@ -39,7 +40,7 @@
     /* ============== carruseles ============== */
     .presentacion{
         flex-wrap: wrap;
-        padding: 0px;
+        padding: 5px 0px 20px 0px;
         .presentacionGrupo1{
             padding: 5px;
             h3{
@@ -72,7 +73,7 @@
         display: grid;
         grid-template-columns: auto;
         grid-template-rows: auto;
-        gap: 5px;
+        gap: 10px;
         justify-content: center;
         align-items: center;
         padding: 15px 15px 30px 15px;
@@ -129,7 +130,12 @@
 
     /* ============== galeriaPromos index ============== */
     .galeriaPromos{
-        background-color: rgba(0, 0, 0, 0);
+        padding: 5px 0px 30px 0px;
+        .card{
+            flex-wrap: wrap;
+            align-items: flex-end;
+            flex-direction: unset;
+        }
     }
     /* ============== galeriaPromos index ============== */
 
@@ -199,6 +205,9 @@
     }
     /* ============== envios ==============*/
 
+    .mediaIndex{
+        padding: 10px 0px;
+    }
 
     /* ============== botones ============== */
     .btn-wsp{
@@ -239,6 +248,9 @@
 
 
 @media screen and (min-width:600px){
+    .contenedorTitulo2{
+        margin: 0px 100px;
+    }
     .titulo2 {
         margin-top: 35px;
     }
@@ -259,6 +271,7 @@
         font-weight: bolder;
     }
     .titulo2 {
+        font-size: xx-large;
         margin-top: 10px;
     }
     p, a {
@@ -320,6 +333,17 @@
     .derecha{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
+        .textoderecha{
+            .contenidoderecha{
+                p{
+                    font-size: 20px;
+                    text-align: justify;
+                }
+                h3{
+                    text-align: center;
+                }
+            }
+        }
     }
 
     .imagenPromo{
@@ -433,6 +457,10 @@
 
     .presentacion{
         padding: 20px 70px 50px 70px;
+    }
+
+    .contenedorTitulo2{
+        margin: 0px 250px;
     }
 
     .carruselBox2{

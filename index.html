@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./estilos/style.css">
     <link rel="icon" href="./img/logoViveroicon.ico">
     <meta name="description" content="Vivero Juan Jose | Envios a todo el país. Compra desde tu casa. Todas las variedades. Promociones minoristas y mayoristas.">
@@ -18,7 +19,7 @@
             
                 <!-- icono -->
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./img/logoVivero.jpeg" width="50px" alt="logo del vivero">
+                    <img src="./img/logoVivero.jpeg" width="50px" alt="logo del vivero juan jose con fondo celeste adornado con cactus">
                 </a>
                 
                 <!-- boton del menu -->
@@ -73,12 +74,12 @@
         </div>
         
         <!-- carrusel de imagenes -->
-        <section class="presentacion">
+        <section class="presentacion" data-aos="fade-right">
             <div class="presentacionGrupo1">
-                <h3>Productores de cactus y suculentas en la región de Entre Ríos para todo el país</h3>
-                <p class="descripciones">Nuestro vivero está ubicado en Concordia-Entre Ríos, a 600km de Buenos Aires. Somos productores con mas de 30 años de experiencia en el rubro. Contamos con mas de 50 variedades de Cactus y suculentas. Realizamos envíos a todo el país y contamos con atención al público. </p>
+                <p><strong>Productores de cactus y suculentas en la región de Entre Ríos, para todo el país.</strong><p>
+                <p class="descripciones">Nuestro vivero está ubicado en Concordia, Entre Ríos. Somos productores con mas de 30 años de experiencia en el rubro. Contamos con mas de 50 variedades de Cactus y suculentas.</p>
             </div>
-            <div class="carruselBox">
+            <div class="carruselBox" data-aos="fade-right">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -116,35 +117,38 @@
         <!-- carrusel de imagenes -->
 
         <!-- galeria de promociones -->
-        <div class="contenedorTitulo2">
-        <h2 class="titulo2">Promociones vigentes</h2>
-        </div>
-        <p class="descripciones">Contamos con un amplio catálogo de cactus y suculentas. Aceptamos todos los medios de pago, todas las tarjetas. En caso de atención personalizada, no dudes en contactarte por WhatsApp</p>
-        <section class="galeria">
-            <div class="gridGaleria promo1">
-                <a href="#img1"><img src="./img/grid1.png" alt="Promocion 1"></a>
+        <section data-aos="fade-right">
+            <div class="contenedorTitulo2">
+                <h2 class="titulo2">Promociones vigentes</h2>
             </div>
-            <div class="gridGaleria promo2">
-                <a href="#img2"><img src="./img/grid2.png" alt="Promocion 2"></a>
-            </div>
-            <div class="gridGaleria promo3">
-                <a href="#img3"><img src="./img/grid3.png" alt="Promocion 3"></a>
-            </div>
-            <div class="gridGaleria promo4">
-                <a href="#img4"><img src="./img/grid4.png" alt="Promocion 4"></a>
-            </div>
-            <div class="gridGaleria promo5">
-                <a href="#img5"><img src="./img/grid5.png" alt="Promocion 5"></a>
-            </div>
-            <div class="gridGaleria promo6">
-                <a href="#img6"><img src="./img/grid6.png" alt="Promocion 6"></a>
-            </div>
-            <div class="gridGaleria banner">
-                <img src="./img/banner50off.png" alt="Banner 50% descuento">
-            </div>
-            <div class="gridGaleria mediosDePago">
-                <a target="_blank" href="https://viverojuanjose.mercadoshops.com.ar/p/ayuda/promociones-bancos"><img src="./img/mediosdepago.png" alt="Banner de medios de pago"></a>
-            </div>
+            <p class="descripciones">Tenemos un amplio catálogo donde podés elegir las variedades que quieras y armar tu combo como más te guste. Aceptamos todos los medios de pago, todas las tarjetas. En caso de atención personalizada, no dudes en contactarte por <a target="_blank" href="https://api.whatsapp.com/send/?phone=5493454178593&text&type=phone_number&app_absent=0"><strong>WhatsApp.</strong></a></p>
+            
+            <section class="galeria" data-aos="fade-right">
+                <div class="gridGaleria promo1">
+                    <a href="#img1"><img src="./img/grid1.png" alt="Imagen de promocion 1, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de diversos colores"></a>
+                </div>
+                <div class="gridGaleria promo2">
+                    <a href="#img2"><img src="./img/grid2.png" alt="Imagen de promocion 2, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas estiradas"></a>
+                </div>
+                <div class="gridGaleria promo3">
+                    <a href="#img3"><img src="./img/grid3.png" alt="Imagen de promocion 3, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de colores rojo y violeta"></a>
+                </div>
+                <div class="gridGaleria promo4">
+                    <a href="#img4"><img src="./img/grid4.png" alt="Imagen de promocion 4, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas estiradas"></a>
+                </div>
+                <div class="gridGaleria promo5">
+                    <a href="#img5"><img src="./img/grid5.png" alt="Imagen de promocion 5, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas gruesas"></a>
+                </div>
+                <div class="gridGaleria promo6">
+                    <a href="#img6"><img src="./img/grid6.png" alt="Imagen de promocion 6, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de diversos colores"></a>
+                </div>
+                <div class="gridGaleria banner">
+                    <img src="./img/banner50off.png" alt="Banner 50% descuento con los datos del vivero">
+                </div>
+                <div class="gridGaleria mediosDePago">
+                    <a target="_blank" href="https://viverojuanjose.mercadoshops.com.ar/p/ayuda/promociones-bancos"><img src="./img/mediosdepago.png" alt="Banner de medios de pago con las tarjetas de crédito"></a>
+                </div>
+            </section>
         </section>
         <!-- galeria de promociones -->
 
@@ -155,7 +159,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img4">&#60</a>
-                <a href="#img2"><img src="./img/grid1.png" alt=""></a>
+                <a href="#img2"><img src="./img/grid1.png" alt="Imagen de promocion 1, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de diversos colores"></a>
                 <a href="#img2">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -165,7 +169,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img1">&#60</a>
-                <a href="#img3"><img src="./img/grid2.png" alt=""></a>
+                <a href="#img3"><img src="./img/grid2.png" alt="Imagen de promocion 2, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas estiradas"></a>
                 <a href="#img3">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -175,7 +179,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img2">&#60</a>
-                <a href="#img4"><img src="./img/grid3.png" alt=""></a>
+                <a href="#img4"><img src="./img/grid3.png" alt="Imagen de promocion 3, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de colores rojo y violeta"></a>
                 <a href="#img4">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -185,7 +189,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img3">&#60</a>
-                <a href="#img5"><img src="./img/grid4.png" alt=""></a>
+                <a href="#img5"><img src="./img/grid4.png" alt="Imagen de promocion 4, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas estiradas"></a>
                 <a href="#img5">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -195,7 +199,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img4">&#60</a>
-                <a href="#img6"><img src="./img/grid5.png" alt=""></a>
+                <a href="#img6"><img src="./img/grid5.png" alt="Imagen de promocion 5, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella con las puntas mas gruesas"></a>
                 <a href="#img6">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -205,7 +209,7 @@
             <h3>Consulta por Stock</h3>
             <div class="imagenPromo">
                 <a href="#img5">&#60</a>
-                <a href="#img1"><img src="./img/grid6.png" alt=""></a>
+                <a href="#img1"><img src="./img/grid6.png" alt="Imagen de promocion 6, que cuenta con 4 variedades distintas de cactus y suculentas con flores en forma de estrella de diversos colores"></a>
                 <a href="#img1">></a>
             </div>
             <a class="cerrar" href="">X</a>
@@ -218,11 +222,11 @@
         <div class="contenedorTitulo2">
             <h3 class="titulo2">Conocé más acerca de nosotros...</h3>
         </div>
-        <section class="mediaIndex">
+        <section class="mediaIndex" data-aos="fade-right">
             <div>
-                <iframe width="" height="" src="https://www.youtube.com/embed/dVzmXC7d4NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="" height="" src="https://www.youtube.com/embed/nMRTMRkvxuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <iframe width="" height="" src="https://www.youtube.com/embed/uzAA2lXg8s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-aos="fade-right" src="https://www.youtube.com/embed/dVzmXC7d4NU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-aos="fade-right" src="https://www.youtube.com/embed/nMRTMRkvxuc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <iframe data-aos="fade-right" src="https://www.youtube.com/embed/uzAA2lXg8s0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
         <!-- seccion media yt -->
@@ -247,7 +251,7 @@
             <div class="cajaFooter">
                 <h5>SOBRE NOSOTROS</h5>
                 <p class="parrafoFooter">VIVERO JUAN JOSE</p>
-                <p class="parrafoFooter">Productores de cactus y suculentas en la región de Entre Ríos para todo el país</p>
+                <p class="parrafoFooter">Productores de cactus y suculentas en la región de Entre Ríos, para todo el país.</p>
             </div>
             <div class="cajaFooter">
                 <h5>NUESTRAS REDES</h5>
@@ -262,10 +266,13 @@
             <small>&copy; 2023 <b>Reschke Nicolas</b> - Todos los Derechos Reservados.</small>
         </div>
     </footer>
-
     <!-- footer -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/b74834922d.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
