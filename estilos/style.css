@@ -315,7 +315,6 @@ p, a {
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 20px;
-  background: linear-gradient(to left, rgb(255, 217, 122), green);
 }
 .izquierda .imgizquierda {
   overflow: hidden;
@@ -346,7 +345,6 @@ p, a {
   padding: 20px;
   margin-bottom: 10px;
   border-radius: 20px;
-  background: linear-gradient(to right, rgb(255, 217, 122), green);
 }
 .derecha .imgderecha {
   overflow: hidden;
@@ -371,7 +369,6 @@ p, a {
 .envios {
   display: grid;
   width: 100%;
-  min-height: 100vh;
   place-items: center;
   margin-top: 20px;
 }
@@ -476,12 +473,12 @@ p, a {
   line-height: 45px;
   color: antiquewhite;
   margin-right: 10px;
-  background-color: red;
+  background-color: rgb(44, 155, 53);
   text-align: center;
   transition: all 300ms ease;
 }
 .footerContainer .grupo1 .cajaFooter .redes a:hover {
-  color: black;
+  color: rgb(0, 0, 0);
 }
 .footerContainer .grupo2 {
   background-color: black;
@@ -498,7 +495,7 @@ p, a {
     font-weight: normal;
   }
   .contenedorTitulo2 {
-    margin: 0px 10px;
+    margin: 10px 10px;
   }
   .contenedorTitulo2 .titulo2 {
     margin-top: 10px;
@@ -529,7 +526,7 @@ p, a {
     padding: 5px 0px 20px 0px;
   }
   .presentacion .presentacionGrupo1 {
-    padding: 5px;
+    padding: 10px;
   }
   .presentacion .presentacionGrupo1 h3 {
     padding: 0px 10px;
@@ -633,6 +630,7 @@ p, a {
 .izquierda {
   width: 90%;
   grid-template-columns: 1fr;
+  background: linear-gradient(to top, rgb(255, 217, 122), green);
 }
 .izquierda .textoizquierda .contenidoizquierda p {
   font-size: 15px;
@@ -647,6 +645,7 @@ p, a {
 .derecha {
   width: 90%;
   grid-template-columns: 1fr;
+  background: linear-gradient(to bottom, rgb(255, 217, 122), green);
 }
 .derecha .textoderecha .contenidoderecha p {
   text-align: justify;
@@ -723,7 +722,7 @@ p, a {
 /* ============== footer ============== */
 @media screen and (min-width: 600px) {
   .contenedorTitulo2 {
-    margin: 0px 100px;
+    margin: 10px 100px;
   }
   .titulo2 {
     margin-top: 35px;
@@ -786,6 +785,7 @@ p, a {
   .izquierda {
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to left, rgb(255, 217, 122), green);
   }
   .izquierda .textoizquierda .contenidoizquierda p {
     font-size: 20px;
@@ -797,6 +797,7 @@ p, a {
   .derecha {
     width: 80%;
     grid-template-columns: repeat(2, 1fr);
+    background: linear-gradient(to right, rgb(255, 217, 122), green);
   }
   .derecha .textoderecha .contenidoderecha p {
     font-size: 20px;
@@ -907,7 +908,7 @@ p, a {
     padding: 20px 70px 50px 70px;
   }
   .contenedorTitulo2 {
-    margin: 0px 250px;
+    margin: 20px 250px;
   }
   .carruselBox2 {
     margin: 30px 150px;

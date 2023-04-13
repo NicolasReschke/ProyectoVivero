@@ -40,11 +40,11 @@
                     line-height: 45px;
                     color: antiquewhite;
                     margin-right: 10px;
-                    background-color: red;
+                    background-color: rgb(44, 155, 53);
                     text-align: center;
                     transition: all 300ms ease;
                     &:hover{
-                        color:black;
+                        color:rgb(0, 0, 0);
                     }
                 }
             }

@@ -8,7 +8,7 @@
     }
     
     .contenedorTitulo2{
-        margin: 0px 10px;
+        margin: 10px 10px;
         .titulo2 {
             margin-top: 10px;
         }
@@ -42,7 +42,7 @@
         flex-wrap: wrap;
         padding: 5px 0px 20px 0px;
         .presentacionGrupo1{
-            padding: 5px;
+            padding: 10px;
             h3{
                 padding: 0px 10px;
                 text-align: center;
@@ -145,6 +145,7 @@
     .izquierda{
         width: 90%;
         grid-template-columns: 1fr;
+        background: linear-gradient(to top, rgb(255, 217, 122), green);
         .textoizquierda{
             .contenidoizquierda{
                 p{
@@ -162,6 +163,7 @@
     .derecha{
         width: 90%;
         grid-template-columns: 1fr;
+        background: linear-gradient(to bottom, rgb(255, 217, 122), green);
         .textoderecha{
             .contenidoderecha{
                 p{
@@ -249,7 +251,7 @@
 
 @media screen and (min-width:600px){
     .contenedorTitulo2{
-        margin: 0px 100px;
+        margin: 10px 100px;
     }
     .titulo2 {
         margin-top: 35px;
@@ -317,6 +319,8 @@
     .izquierda{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to left, rgb(255, 217, 122), green);
+
         .textoizquierda{
             .contenidoizquierda{
                 p{
@@ -333,6 +337,7 @@
     .derecha{
         width: 80%;
         grid-template-columns: repeat(2, 1fr);
+        background: linear-gradient(to right, rgb(255, 217, 122), green);
         .textoderecha{
             .contenidoderecha{
                 p{
@@ -460,7 +465,7 @@
     }
 
     .contenedorTitulo2{
-        margin: 0px 250px;
+        margin: 20px 250px;
     }
 
     .carruselBox2{
