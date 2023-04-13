@@ -94,6 +94,7 @@ p, a {
   left: 30px;
   font-size: 45px;
   color: rgb(70, 70, 70);
+  z-index: 100;
 }
 
 /* ============== btn-gotop ============== */
@@ -286,15 +287,66 @@ p, a {
 
 /* ============== estilos del modal ============== */
 /* ============== galeria de ofertas en pag-promociones ============== */
-.galeriaPromos {
+.porMayorMenor {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0);
 }
-.galeriaPromos .card {
-  margin: 20px;
-  cursor: pointer;
+.porMayorMenor .containerx {
+  position: relative;
+  width: 1400px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 5px;
+}
+.porMayorMenor .containerx .cardx {
+  position: relative;
+  max-width: 300px;
+  height: 300px;
+  background: linear-gradient(to top, rgb(255, 217, 122), green);
+  margin: 40px 5px;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+.porMayorMenor .containerx .cardx:hover {
+  height: 440px;
+}
+.porMayorMenor .containerx .cardx .contentx {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.porMayorMenor .containerx .cardx .imgBox {
+  display: grid;
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.porMayorMenor .containerx .cardx .imgBox img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.containerx .cardx:hover .contentx {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -10px;
+  transition-delay: 0.3s;
 }
 
 /* ============== galeria de ofertas en pag-promociones ============== */
@@ -616,17 +668,7 @@ p, a {
 }
 
 /* ============== gridGaleria index ============== */
-/* ============== galeriaPromos index ============== */
-.galeriaPromos {
-  padding: 5px 0px 30px 0px;
-}
-.galeriaPromos .card {
-  flex-wrap: wrap;
-  align-items: flex-end;
-  flex-direction: unset;
-}
-
-/* ============== galeriaPromos index ============== */
+/* ============== galeriaPromociones ============== */
 /* ============== galeria de productos: cactus y suculentas ============== */
 /* ============== izquierda ==============*/
 .izquierda {
@@ -935,6 +977,10 @@ p, a {
     padding: 20px 60px;
   }
 }
+.porMayorMenor .containerx {
+  width: 900px;
+}
+
 .envios .izquierda {
   padding: 10px;
   grid-gap: 10px 0px;
@@ -959,6 +1005,11 @@ p, a {
   width: 240px;
 }
 
+@media screen and (min-width: 1300px) {
+  .porMayorMenor .containerx {
+    width: 1300px;
+  }
+}
 @media screen and (min-width: 1400px) {
   .presentacion {
     flex-wrap: nowrap;
