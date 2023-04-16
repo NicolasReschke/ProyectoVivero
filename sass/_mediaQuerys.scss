@@ -126,18 +126,7 @@
         height: 50%;
     }
     /* ============== gridGaleria index ============== */
-    // Perdon Ismael, por el codigo comentado, pero son las 4.30 de la mañana y trabajo en 3 hs :_(
-    // Mañana miro q esté todo correcto y lo borro.
-    // .galeriaPromos{
-    //     padding: 5px 0px 30px 0px;
-    //     .card{
-    //         flex-wrap: wrap;
-    //         align-items: flex-end;
-    //         flex-direction: unset;
-    //     }
-    // }
-    /* ============== galeriaPromociones ============== */
-
+    
 
     /* ============== galeria de productos: cactus y suculentas ============== */
     /* ============== izquierda ==============*/
@@ -186,7 +175,8 @@
             .imgizquierda{
                 text-align: center;
                 iframe{
-                    width: auto;
+                    height: 500px;
+                    border-radius: 15px;
                 }
             }
         }
@@ -205,6 +195,7 @@
         }
     }
     /* ============== envios ==============*/
+
 
     .mediaIndex{
         padding: 10px 0px;
@@ -498,32 +489,6 @@
 .porMayorMenor{
     .containerx{
         width: 900px;
-    }
-}
-
-.envios{
-    .izquierda{
-        padding: 10px;
-        grid-gap: 10px 0px;
-        .imgizquierda{
-            text-align: center;
-            iframe{
-                width: auto;
-            }
-        }
-    }
-    .derecha{
-        padding: 10px;
-        grid-gap: 10px 0px;
-        .textoderecha{
-            justify-content: center;
-            .imgderecha{
-                text-align: center;
-                img{
-                    width: 240px;
-                }
-            }
-        }
     }
 }
 

@@ -249,8 +249,10 @@ p, a {
 }
 
 .imagenPromo a {
-  color: #fff;
-  font-size: 15px;
+  background: red;
+  border: 1px solid rgb(0, 0, 0);
+  color: #000;
+  font-size: 25px;
   text-decoration: none;
   margin: 0 10px;
 }
@@ -273,14 +275,15 @@ p, a {
   display: block;
   background: red;
   border: 1px solid rgb(0, 0, 0);
-  width: 25px;
-  height: 25px;
+  width: 45px;
+  height: 45px;
   margin: auto;
   text-align: center;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 50px;
+  font-weight: bold;
   color: #000;
-  padding: 0px;
+  padding: 10px 0px;
   border-radius: 30%;
   line-height: 20px;
 }
@@ -485,6 +488,28 @@ p, a {
   text-align: center;
 }
 
+.container-fluid {
+  width: 90%;
+  max-width: 1400px;
+}
+.container-fluid .row {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.199);
+  border-radius: 15px;
+}
+.container-fluid .row .col-sm-5 {
+  text-align: center;
+}
+.container-fluid .row .col-sm-5 img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 15px;
+}
+
 /* ============== footer ============== */
 .footerContainer {
   width: 100%;
@@ -668,7 +693,6 @@ p, a {
 }
 
 /* ============== gridGaleria index ============== */
-/* ============== galeriaPromociones ============== */
 /* ============== galeria de productos: cactus y suculentas ============== */
 /* ============== izquierda ==============*/
 .izquierda {
@@ -709,7 +733,8 @@ p, a {
   text-align: center;
 }
 .envios .izquierda .imgizquierda iframe {
-  width: auto;
+  height: 500px;
+  border-radius: 15px;
 }
 .envios .derecha {
   padding: 10px;
@@ -979,30 +1004,6 @@ p, a {
 }
 .porMayorMenor .containerx {
   width: 900px;
-}
-
-.envios .izquierda {
-  padding: 10px;
-  grid-gap: 10px 0px;
-}
-.envios .izquierda .imgizquierda {
-  text-align: center;
-}
-.envios .izquierda .imgizquierda iframe {
-  width: auto;
-}
-.envios .derecha {
-  padding: 10px;
-  grid-gap: 10px 0px;
-}
-.envios .derecha .textoderecha {
-  justify-content: center;
-}
-.envios .derecha .textoderecha .imgderecha {
-  text-align: center;
-}
-.envios .derecha .textoderecha .imgderecha img {
-  width: 240px;
 }
 
 @media screen and (min-width: 1300px) {

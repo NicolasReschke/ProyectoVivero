@@ -33,7 +33,7 @@
                             <a class="nav-link" href="../index.html">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/promos.html">PROMOCIONES!</a>
+                            <a class="nav-link" aria-current="page" href="../pages/promos.html">PROMOCIONES!</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">PRODUCTOS</a>
@@ -47,7 +47,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/comprar.html">COMPRAS</a>
+                            <a class="nav-link active" href="../pages/comprar.html">COMPRAS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../pages/envios.html">ENVIOS</a>
@@ -130,39 +130,45 @@
             </div>
         </section>
 
-        <div class="envios">
-            <div class="contenedorTitulo2">
-                <div class="titulo2">
-                    <h3>Mercado Libre</h3>
-                </div>
-            </div>
-            <div class="derecha">
-                <div class="textoderecha">
-                    <h3><a target="_blank" href="https://articulo.mercadolibre.com.ar/noindex/freeReturn/fashion?itemId=MLA898485076&quantity=1&new_version=true&modal=false">Devoluciones gratis</a></h3>
-                </div>
-                <div class="contenidoderecha">
-                    <p class="descripciones">Tenés 30 días desde que recibís el producto para devolverlo. ¡No importa el motivo!</p>
-                </div>
-                </div>
-            <div class="derecha">
-                <div class="textoderecha">
-                    <h3><a target="_blank" href="https://articulo.mercadolibre.com.ar/noindex/warranty/MLA898485076?new_version=true&modal=false&newIndex=true">Garantía</a></h3>
-                </div>
-                <div class="contenidoderecha">
-                    <p class="descripciones">Tu compra está protegida. Si hay algún problema o no recibís el producto tal como lo compraste, te devolvemos el dinero que pagaste.</p>
-                </div>            </div>
-            <div class="izquierda">
-                <div class="textoizquierda">
-                    <div class="contenidoizquierda">
-                        <p class="descripciones">Somos MercadoLíder con más de 500 ventas en los últimos 365 días.</p>
-                    </div>
-                </div>
-                <div class="imgizquierda">
-                    <a target="_blank" href="https://www.mercadolibre.com.ar/perfil/VIVEROJUANJOSE"><img src="../img/opinionML.png" alt="datos y opiniones de mercadolibre"></a>
-                </div>
+        <div class="contenedorTitulo2">
+            <div class="titulo2">
+                <h3>Mercado Libre</h3>
             </div>
         </div>
 
+        <!-- A pedido del tutor, hice una sección con la grilla de bootstrap. La corrección fué: "Falta uso de grilla de bootstrap" -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5">
+                    <h4>Devoluciones gratis</h4>
+                </div>
+                <div class="col-sm-7">
+                    <a target="_blank" href="https://articulo.mercadolibre.com.ar/noindex/freeReturn/fashion?itemId=MLA898485076&quantity=1&new_version=true&modal=false">
+                        <p class="descripciones">Tenés 30 días desde que recibís el producto para devolverlo. ¡No importa el motivo! <strong>Podés informarte más haciendo click aquí.</strong></p>
+                    </a>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                    <h4>Garantía</h4>
+                </div>
+                <div class="col-sm-7">
+                    <a target="_blank" href="https://articulo.mercadolibre.com.ar/noindex/warranty/MLA898485076?new_version=true&modal=false&newIndex=true">
+                        <p class="descripciones">Tu compra está protegida. Si hay algún problema o no recibís el producto tal como lo compraste, te devolvemos el dinero que pagaste. <strong>Podés informarte más haciendo click aquí.</strong></p>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-5">
+                        <img src="../img/opinionML.png" class="img-fluid" alt="datos y opiniones de mercadolibre">
+                </div>
+                <div class="col-sm-7">
+                    <a target="_blank" href="https://www.mercadolibre.com.ar/perfil/VIVEROJUANJOSE">
+                        <p class="descripciones">Somos MercadoLíder con más de 500 ventas en los últimos 365 días. <strong>Podes ver la opinión de nuestros clientes aquí.</strong></p>
+                    </a>
+                    </div>
+            </div>
+        </div>
     </main>
 
     <a target="_blank" href="https://api.whatsapp.com/send/?phone=5493454178593&text&type=phone_number&app_absent=0" class="btn-wsp">
